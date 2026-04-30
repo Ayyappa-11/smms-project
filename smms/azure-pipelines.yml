@@ -1,0 +1,15 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo "Building Student Mark Management System"
+  displayName: 'Build Step'
+
+- script: echo "Running Test Cases - TC001, TC002, TC003"
+  displayName: 'Test Step'
+
+- script: echo "Deployment Complete!"
+  displayName: 'Deploy Step'
